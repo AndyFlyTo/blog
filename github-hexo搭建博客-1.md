@@ -133,7 +133,7 @@ deploy:
  -  每一项冒号后有一个空格 
  -  此时暂时用`https`协议的仓库地址来写，且后面还有.git
  
-hexo3.0以后deployer-git与hexo是分开的，所以要去下载
+hexo3.0以后deployer-git与hexo是分开的，所以要去下载。
 ```
 sudo npm install hexo-deployer-git --save (下载安装deloyer-git)
 hexo deploy （部署）

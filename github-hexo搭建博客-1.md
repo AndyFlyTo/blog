@@ -52,11 +52,10 @@ PS：如果是下载的源码，看网上这样配置,可以试一下
 
 ####  **配置**
 把安装的路径配置到**环境变量**中，为什么要配置环境变量，是因为我们只在这个目录下存在有node，如果我们想在任意目录下使用，则需要将其添加到环境变量中，让电脑从其中寻找这个路径。
-pwd复制下node所在的路径，编辑`/etc/profile`或者`/etc/.bashrc`(均为shell配置文件)在文件最后添加
+pwd复制下node所在的路径，编辑`/etc/profile`或者`/etc/bash.bashrc`或者`.bashrc`(均为shell配置文件,/etc/bash.bashrc是在全局上定制shell，.bashrc位于用户主目录下，一般修改这个)在文件最后添加
 **`PATH=$PATH:/home/chenchen/download/node-v4.5.0-linux-x64/bin`**将我的路径改成自己的bin路径
 修改好了保存退出（如果使用vi打开，点击i进入编辑模式，退出时按Esc，然后输入：wq)
-再使用source保存，使新改动内容立即临时生效，而不用重新登录,重新启动一下配置
-但是再开一个终端的话，可能又找不到，重启就好了，Ubuntu下是没有问题的。
+再使用source保存，使新改动内容立即临时生效，而不用重新登录,重新启动一下配置。（shell脚本文件，在用户登录后自动执行）
 ```
 source /etc/profile
 ```
